@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>VARTIA</title>
+        <title>Lasten ääni</title>
 
         <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
         <meta name="format-detection" content="telephone=no">
@@ -26,28 +26,21 @@
      <div class="header clearfix">
 
       <div class="jumbotron">
-        <center><h1><i class="fa fa-wrench" aria-hidden="true"></i> VARTIA</h1></center>
+        <center><h1><i class="fa fa-wrench" aria-hidden="true"></i> Lasten ääni</h1></center>
         <p class="lead">
-	  <p class="alert alert-warning" id="odotanSoittoa">Odotan soittoa...</p>
+	  <p class="alert alert-warning" id="odotanSoittoa">Odotan huuttoa...</p>
 	  <p id="result"></p>
 
-	    <img id="smallImage" src="" class="img-thumbnail"/>
+	    <div id="status"></div>
+	    <textarea class="form-control" id="read"></textarea>
 
-
-       <form><input type='button' id='snapshot' class="btn btn-block btn-warning" value="Näytä nykyinen kuva"/></form> 
-       <video autoplay class="img-thumbnail" style="display:none"></video>
-       <canvas id='canvas' class="img-thumbnail" style="display:none;" width="480" height="640"></canvas> 
-
-	<img src="" width="480" height="640" class="img-thumbnail">
-	<br>
 
     <div class="input-group">
-	<input type="text" id="sahkoposti" class="form-control" placeholder="Säköpostisi">
+	<input type="text" id="puhelinnumero" class="form-control" placeholder="Puhelinnumero">
       <span class="input-group-btn">
-        <button class="btn btn-success saveEmail" type="button">Tallenna</button>
+        <button class="btn btn-success savePuhelin" type="button">Tallenna</button>
       </span>
     </div>
-
 
 
 
